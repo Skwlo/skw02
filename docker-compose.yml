@@ -1,0 +1,12 @@
+version: '3'
+services:
+  todo-app:
+    build:
+      context: ./todohtml
+    ports:
+      - "8080:80"
+  personal-website:
+    build:
+      context: ./html
+    ports:
+      - "8081:80"
