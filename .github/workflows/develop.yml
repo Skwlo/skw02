@@ -60,6 +60,6 @@ jobs:
           docker rm todo-app || true &&
           docker stop personal-website || true &&
           docker rm personal-website || true &&
-          docker run -d -p 8080:80 --name todo-app $DOCKER_USERNAME/todo-app:latest &&
+          docker run -d -p 8085:80 --name todo-app $DOCKER_USERNAME/todo-app:latest &&
           docker run -d -p 8081:80 --name personal-website $DOCKER_USERNAME/personal-website:latest
         "
