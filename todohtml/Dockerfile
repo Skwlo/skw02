@@ -5,7 +5,7 @@ FROM nginx:alpine
 COPY . /usr/share/nginx/html
 
 # 暴露8080端口
-EXPOSE 8080
+EXPOSE 8085
 
 # 启动Nginx
 CMD ["nginx", "-g", "daemon off;"]
