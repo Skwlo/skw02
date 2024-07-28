@@ -1,9 +1,111 @@
 <!DOCTYPE html>
+<html>
 <head>
+  <title>Self-introduction</title>
+  <style>
+    body {
+        background-image: url('./b.jpg');
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      background-color: #f4f4f4;
+    }
 
+    .resume {
+      width: 21cm;
+      max-width: 100%;
+      padding: 2cm;
+      box-sizing: border-box;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .info {
+      flex-grow: 1;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+    .info-row {
+      display: flex;
+      margin-bottom: 8px;
+    }
+
+    .info-label {
+      width:60px;
+      max-width: 120px;
+      font-weight: bold;
+    }
+
+    .info-value {
+      flex-grow: 1;
+    }
+  </style>
 </head>
 <body>
-    <h2>name:  Kangwen Sun</h2>
-    <h2>student id   20222093 </h2>
-    <img src="./a.jpg">
+  <div class="resume">
+    <h2>Self-introduction</h2>
+    <div class="header">
+      <div class="info">
+        <div class="info-row">
+          <div class="info-label">name:</div>
+          <div class="info-value">Kangwen Sun</div>
+        </div>
+        <div class="info-row">
+          <div class="info-label">gender：</div>
+          <div class="info-value"> 男</div>
+        </div>
+        <div class="info-row">
+          <div class="info-label">age:</div>
+          <div class="info-value">20</div>
+        </div>
+        <div class="info-row">
+          <div class="info-label">phone:</div>
+          <div class="info-value">19236529923</div>
+        </div>
+        <div class="info-row">
+          <div class="info-label">Email:</div>
+          <div class="info-value">1950580563@qq.com</div>
+        </div>
+      </div>
+      <img class="avatar" src="./a.jpg" alt="头像">
+    </div>
+    <div class="section">
+      <h2>educational background</h2>
+      <div class="info-row">
+        <div class="info-label">education：</div>
+        <div class="info-value">undergraduate</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">school:</div>
+        <div class="info-value">NorthMinzuUniversity</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">major:</div>
+        <div class="info-value">software engineering</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">honor:</div>
+        <div class="info-value">merit student</div>
+      </div>
+    </div>
+    <div class="section">
+    </div>
+  </div>
 </body>
+</html>
